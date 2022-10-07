@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc() 
+        {
+            a= parseInt( document.getElementById("a").value);
+            b=  parseInt( document.getElementById("b").value);
+            c=a+b;
+            document.getElementById("sum").value=c;
+            alert("sum is:"+c)
+        }
+    </script>
+</head>
+<body>
+    Enter A value : <input type="text"  id="a"><br>
+    Enter B value : <input type="text"  id="b"><br>
+    Result :        <input type="text"  id="sum"><br>
+    <input type="submit" value="add" onclick="abc()" >
+</body>
+</html>

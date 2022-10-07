@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc() 
+        {
+            a= parseInt( document.getElementById("a").value);
+            b=  parseInt( document.getElementById("b").value);
+            c=a+b;
+            document.getElementById("res").value=c;
+            alert("sum is:"+c)
+        }
+        function sub(){
+            a= parseInt( document.getElementById("a").value);
+            b=  parseInt( document.getElementById("b").value);
+            c=a-b;
+            document.getElementById("res").value=c;
+        }
+        function mul(){
+            a=parseInt(document.getElementById("a").value);
+            b=parseInt(document.getElementById("b").value);
+            c=a*b;
+            document.getElementById("res").value=c;
+        }
+        function divide(){
+            a=parseInt(document.getElementById("a").value);
+            b=parseaInt(document.getElementById("b").value);
+            c=a/b;
+            document.getElementById("res").value=c;
+        }
+    </script>
+</head>
+<body bgcolor="yellow">
+   <div style="text-align: center; margin: 200px;"> Enter A value : <input type="text"  id="a"><br>
+    Enter B value : <input type="text"  id="b"><br>
+    Result :        <input type="text"  id="res"><br>
+    <input type="submit" value="add" onclick="abc()">
+    <input type="submit" value="sub" onclick="sub()">
+    <input type="submit" value="mul" onclick="mul()">
+    <input type="submit" value="divide" onclick="divide()"></div>
+    
+</body>
+</html>

@@ -5,42 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-
-            // class Demo
-            // {
-            //     Demo()
-            //     {
-            //         console.log("Hi ")
-            //     }
-            // }
-            // Demo d = new Demo();
-            
-            class Demo 
-            {
-                constructor()
-                {
-                    console.log("Hi Contructor .........!")
-                    for(var i=0;i<=10;i++)
-                    {
-                        console.log(i)
-                    }
-                }
-                abc()
-                {
-                    console.log("Abc Method ...!")
-                    for(var i=0;i<=10;i++)
-                    {
-                        console.log(i)
-                    }
-                }
-            }
-            var  d =new Demo();
-            d.abc();
-
-
+        function abc() 
+        {
+            name= document.getElementById("myuserid").value;
+            alert("my name is:"+name)
+        }
     </script>
 </head>
 <body>
-    <h1> HI Welcome to java Script ....!</h1>
+    Name: <input type="text" name="uname" id="myuserid">
+    <input type="submit" value="click" onclick="abc()" >
 </body>
 </html>
